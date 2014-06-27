@@ -23,6 +23,51 @@ body {
 	font-family: Helvetica, sans-serif;
 }
 
+table {
+	width: 100%;
+	
+	padding: 0;
+	
+	border: 1px solid #ccc;
+}
+
+table,
+th,
+td {
+	border: 1px solid #ccc;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	border-width: 1px 0 0 1px;
+	margin-bottom: 24px;
+	width: 100%;
+}
+
+tr:nth-child(even) {
+	background:  fuchsia;
+}
+
+table caption,
+th,
+td {
+	padding: 5px 10px;
+	font-weight: normal;
+	text-align: left;
+}
+
+th {
+	border-width: 0 1px 1px 0;
+	background: #ccc;
+	font-weight: bold;
+	color: #333;
+}
+
+td {
+	border-width: 0 1px 1px 0;
+}
+
 /*
 	Header elements
 */
@@ -108,7 +153,7 @@ body {
 
 .single-selector {
 	width: 30%;
-	margin-right: 4.5%;
+	margin-right: 4%;
 	display: inline-block;
 }
 
@@ -151,6 +196,23 @@ body {
 	text-align: center;
 }
 
+.my-pie-chart {
+	display: inline-block;
+	width: 48%;
+	margin-right: 3%;
+	min-height: 300px;
+	
+	border: 1px solid #999;
+}
+
+.my-pie-chart:nth-child(2n) {
+	margin-right: 0;
+}
+
+.my-table {
+	
+}
+
 #footer {
 	padding: 30px;
 	
@@ -159,4 +221,8 @@ body {
 	
 	color: #fff;
 	text-align: center;
+}
+
+@media (min-width: 992px) {
+	
 }
