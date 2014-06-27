@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta charset="UTF-8" />
-    <title>Web Page Title</title>
+    <title>NYC Open Data</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="jquery.js"></script>
     <script src="highcharts.js"></script>
     <script src="script.js"></script>
@@ -11,13 +12,33 @@
 
 </head>
 <body>
-    <h1 class="fruit apples">Web Page Header</h1>
-    <h2 class="oranges fruit">a sub header</h2>
-	<input id="dist" type="text" placeholder="District" />
-    <input id="id" type="text" placeholder="ID" />
-    <div id="submit">Invia</div>
-	<div id="risultato"></div>
-	<div id="scuola-1"></div>
-	
+	<div id="header" class="container">
+	    <h1 class="" id="id-site">NYC Open Data</h1>
+	    <h2 class="" id="tagline">Learn more about your school</h2>
+	</div>
+	<div id="selectors" class="container">
+		<div class="exp-text const-box">
+			<p>Nulla suscipit nulla in iaculis pretium. Fusce tincidunt metus vitae metus interdum posuere mollis ac lorem. In a lorem massa. Donec in enim libero. Sed eget velit et quam gravida pharetra. Nullam vehicula tristique mattis. Pellentesque nec suscipit diam, nec varius velit. In hac habitasse platea dictumst. Quisque venenatis, nulla sit amet aliquam laoreet, ante turpis sagittis est, vitae bibendum orci mi et elit. Suspendisse tincidunt at leo quis imperdiet. Sed dui mauris, semper suscipit nunc quis, mattis hendrerit risus. Pellentesque dictum ipsum quis vulputate interdum. In rutrum lacus congue tortor hendrerit, ac fermentum mauris bibendum. Integer varius, leo vitae fringilla fermentum, libero nibh dapibus libero, id gravida nibh tellus sit amet dui. Mauris sit amet fringilla nulla. In mattis, nibh vitae porttitor hendrerit, lectus odio imperdiet sapien, et faucibus massa nunc bibendum lectus.</p>
+		</div>
+		<ul id="selectors-list" class="const-box">
+			<li class="single-selector">
+				<input id="boro" class="selector" type="text" placeholder="Borough" />
+			</li>
+			<li class="single-selector">
+				<input id="dist" class="selector" type="text" placeholder="District" />
+			</li>
+			<li class="single-selector">
+				<input id="school-id" class="selector" type="text" placeholder="School ID" />
+			</li>
+		</ul>
+		<div id="submit">Send</div>
+	</div>
+	<div id="results" class="container">
+		<div id="risultato"></div>
+		<div id="scuola-1"></div>
+	</div>
+	<div id="footer" class="container">
+		&copy; 2014 - Laura Guglielmini
+	</div>
 </body>
 </html>
