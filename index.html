@@ -14,11 +14,13 @@
 <body>
 	<div id="header" class="container">
 	    <h1 class="" id="id-site">NYC Open Data</h1>
-	    <h2 class="" id="tagline">Learn more about your school</h2>
+	    <h2 class="" id="tagline">Learn more about NYC public schools</h2>
 	</div>
 	<div id="selectors" class="container">
 		<div class="exp-text const-box">
-			<p>Nulla suscipit nulla in iaculis pretium. Fusce tincidunt metus vitae metus interdum posuere mollis ac lorem. In a lorem massa. Donec in enim libero. Sed eget velit et quam gravida pharetra. Nullam vehicula tristique mattis. Pellentesque nec suscipit diam, nec varius velit. In hac habitasse platea dictumst. Quisque venenatis, nulla sit amet aliquam laoreet, ante turpis sagittis est, vitae bibendum orci mi et elit. Suspendisse tincidunt at leo quis imperdiet. Sed dui mauris, semper suscipit nunc quis, mattis hendrerit risus. Pellentesque dictum ipsum quis vulputate interdum. In rutrum lacus congue tortor hendrerit, ac fermentum mauris bibendum. Integer varius, leo vitae fringilla fermentum, libero nibh dapibus libero, id gravida nibh tellus sit amet dui. Mauris sit amet fringilla nulla. In mattis, nibh vitae porttitor hendrerit, lectus odio imperdiet sapien, et faucibus massa nunc bibendum lectus.</p>
+			<p>Through NYC OpenData the Technology and Public service Information Department of the city of New York is allowing access to a large set of data about business, housing, social services, transportation, education and much more. The goal is to ensure that New York City government is increasingly accountable and open for future generations. Beyond presenting information to the public, these data sets serve as a rich resource for developers, civic groups, and anyone else to build applications on their own. </p>
+			<p>By entering the borough, district and identification code of your school of interest, you can visualize here statistics about demographic, performances, enrollment and more. You can also get a prediction of the average SAT score for the school. Try it!</p>
+			<h2 class="title">What's your school?</h2>
 		</div>
 		<ul id="selectors-list" class="const-box">
 			<li class="single-selector">
@@ -34,38 +36,50 @@
 		<div id="submit">Send</div>
 	</div>
 	<div id="results" class="container">
-		<div id="pies-1" class="const-box">
-			<div id="pie-1" class="my-pie-chart">
-				
+<!--		<h2 class="title">Test</h2> -->
+		<div id="blocco-1" class="const-box">
+			<div id="pie-charts">
+				<div id="pie-1" class="my-pie-chart">				
+						</div>
 			</div>
-			<div id="pie-2" class="my-pie-chart">
-				
+			<div id="results-list">
+				<ul>
+					<li class="single-result">School Pupils-Teacher Ratio - <span id="pupil-teach"></span>
+					(ratio ranges between <span id="list-min"></span> and <span id="list-max"></span>,
+					 with a mean value of <span id="list-mean"></span> and a standard deviation of
+					 <span id="list-std"></span>)</li>
+					<li class="single-result">District attendance - <span id="attendance"></span></li>
+					<li class="single-result">District schools enrollment - <span id="enrollment"></span></li>
+					<li class="single-result">SAT average scores: critical reading <span id="sat-read"></span>, 
+					mathematics <span id="sat-math"></span>, writing <span id="sat-write"></span></li>
+				</ul>
+				<p></p>
 			</div>
 		</div>
-		<div id="table-1" class="my-table const-box">
-			<table>
-				<caption>Caption</caption>
-				<thead>
-					<tr>
-						<th>Test</th>
-						<th>Test</th>
-					</tr>
-				</thead>
-				<tfoot>
-					<tr>
-						<td>Test</td>
-						<td>Test</td>
-					</tr>
-				</tfoot>
-				<tbody>
-					<tr>
-						<td>Test</td>
-						<td>Test</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		
+<!--		<div id="blocco-2" class="const-box">
+			<div id="pie-charts">
+				<div id="pie-2" class="my-image">
+					<img src="img/header.jpg" />			
+				</div>
+			</div>
+			<div id="results-list">
+				<ul>
+					<li class="single-result">School Pupils-Teacher Ratio - <span id="pupil-teach"></span>
+					(ratio ranges between <span id="list-min"></span> and <span id="list-max"></span>,
+					 with a mean value of <span id="list-mean"></span> and a standard deviation of
+					 <span id="list-std"></span>)</li>
+					<li class="single-result">District attendance - <span id="attendance"></span></li>
+					<li class="single-result">District schools enrollment - <span id="enrollment"></span></li>
+					<li class="single-result">SAT average scores: critical reading <span id="sat-read"></span>, 
+					mathematics <span id="sat-math"></span>, writing <span id="sat-write"></span></li>
+				</ul>
+				<p></p>
+			</div>
+		</div> -->
+<!--		<div class="const-box"> -->
+<!--			<h2 class="title">Test nuovo</h2>-->
+<!--			<p>Nulla suscipit nulla in iaculis pretium. Fusce tincidunt metus vitae metus interdum posuere mollis ac lorem. In a lorem massa. Donec in enim libero. Sed eget velit et quam gravida pharetra. Nullam vehicula tristique mattis. Pellentesque nec suscipit diam, nec varius velit. In hac habitasse platea dictumst. Quisque venenatis, nulla sit amet aliquam laoreet, ante turpis sagittis est, vitae bibendum orci mi et elit. Suspendisse tincidunt at leo quis imperdiet. Sed dui mauris, semper suscipit nunc quis, mattis hendrerit risus. Pellentesque dictum ipsum quis vulputate interdum. In rutrum lacus congue tortor hendrerit, ac fermentum mauris bibendum. Integer varius, leo vitae fringilla fermentum, libero nibh dapibus libero, id gravida nibh tellus sit amet dui. Mauris sit amet fringilla nulla. In mattis, nibh vitae porttitor hendrerit, lectus odio imperdiet sapien, et faucibus massa nunc bibendum lectus.</p>-->
+<!--		</div>-->
 	</div>
 	<div id="footer" class="container">
 		&copy; 2014 - Laura Guglielmini

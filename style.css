@@ -17,55 +17,29 @@ input {
 */
 
 body {
+	min-width: 1024px;
 	padding: 0;
 	margin: 0;
 	
+	color: #333;
 	font-family: Helvetica, sans-serif;
 }
 
-table {
-	width: 100%;
+.title {
+	margin-bottom: 30px;
 	
-	padding: 0;
+	text-align: center;
+	font-size: 22px;
+	line-height: 33px;
+}
+
+.exp-text p {
+	margin-bottom: 20px;
 	
-	border: 1px solid #ccc;
-}
-
-table,
-th,
-td {
-	border: 1px solid #ccc;
-}
-
-table {
-	border-collapse: separate;
-	border-spacing: 0;
-	border-width: 1px 0 0 1px;
-	margin-bottom: 24px;
-	width: 100%;
-}
-
-tr:nth-child(even) {
-	background:  fuchsia;
-}
-
-table caption,
-th,
-td {
-	padding: 5px 10px;
-	font-weight: normal;
-	text-align: left;
-}
-
-th {
-	border-width: 0 1px 1px 0;
-	background: #ccc;
-	font-weight: bold;
-	color: #333;
-}
-
-td {
-	border-width: 0 1px 1px 0;
+	font-weight: lighter;
+	color: #666;
+	font-size: 20px;
+	line-height: 30px;
 }
 
 /*
@@ -123,19 +97,6 @@ td {
 }
 
 /*
-	User texts elements
-*/
-
-.exp-text p {
-	margin-bottom: 20px;
-	
-	font-weight: lighter;
-	color: #666;
-	font-size: 20px;
-	line-height: 30px;
-}
-
-/*
 	Selector area elements
 */
 
@@ -169,7 +130,7 @@ td {
 	border-bottom: 1px solid #666;
 	
 	color: #ccc;
-	font-size: 70px;
+	font-size: 55px;
 	font-weight: lighter;
 	text-align: center;
 }
@@ -196,11 +157,30 @@ td {
 	text-align: center;
 }
 
-.my-pie-chart {
+#results {
+	display: none;
+}
+
+#pie-charts,
+#results-list {
 	display: inline-block;
-	width: 48%;
-	margin-right: 3%;
-	min-height: 300px;
+	vertical-align: top;
+}
+
+#pie-charts {
+	width: 60%;
+}
+
+
+#results-list {
+	width: 35%;
+	margin-left: 4%;
+}
+
+.my-pie-chart {
+	display: block;
+	margin-bottom: 30px;
+	min-height: 400px;
 	
 	border: 1px solid #999;
 }
@@ -209,8 +189,13 @@ td {
 	margin-right: 0;
 }
 
-.my-table {
-	
+.my-image img {
+	width: 100%;
+	height: auto;
+}
+
+.single-result {
+	margin-bottom: 10px;
 }
 
 #footer {
@@ -221,8 +206,4 @@ td {
 	
 	color: #fff;
 	text-align: center;
-}
-
-@media (min-width: 992px) {
-	
 }
